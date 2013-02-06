@@ -82,10 +82,6 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Views\CategoryView.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="Views\RecruitingActivityView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
