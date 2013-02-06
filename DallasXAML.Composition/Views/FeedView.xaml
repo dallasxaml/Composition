@@ -8,7 +8,7 @@
              mc:Ignorable="d" 
              DataContext="{Binding Feed, Source={StaticResource Locator}}"
              d:DesignHeight="300"
-    d:DesignWidth="442.046">
+    d:DesignWidth="363.637">
     <UserControl.Resources>
         <DataTemplate
             DataType="{x:Type vm:RecruitingActivityViewModel}">
@@ -19,10 +19,11 @@
             <v:UserGroupActivityView />
         </DataTemplate>
     </UserControl.Resources>
-    <Grid>
-        <ListBox
-            ItemsSource="{Binding Activities}"
-            Margin="10"
-            HorizontalContentAlignment="Stretch" />
+    <Grid Margin="10,10,-10,10">
+        <ScrollViewer>
+            <ItemsControl
+                ItemsSource="{Binding Activities}"
+                HorizontalContentAlignment="Stretch" />
+        </ScrollViewer>
     </Grid>
 </UserControl>
