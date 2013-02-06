@@ -4,17 +4,17 @@
     xmlns:Views="clr-namespace:DallasXAML.Composition.Views"
     x:Class="DallasXAML.Composition.MainWindow"
     Title="MainWindow"
-    Height="350"
-    Width="525">
+    Height="571.775"
+    Width="850.5">
 
     <Grid Margin="10">
         <Grid.RowDefinitions>
             <RowDefinition
-                Height="38" />
+                Height="Auto" />
             <RowDefinition
-                Height="204*" />
+                Height="21*" />
             <RowDefinition
-                Height="77*" />
+                Height="8*" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition
