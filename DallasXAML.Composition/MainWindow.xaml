@@ -1,8 +1,38 @@
-﻿<Window x:Class="DallasXAML.Composition.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+﻿<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Views="clr-namespace:DallasXAML.Composition.Views"
+    x:Class="DallasXAML.Composition.MainWindow"
+    Title="MainWindow"
+    Height="350"
+    Width="525">
+
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition
+                Height="38" />
+            <RowDefinition
+                Height="204*" />
+            <RowDefinition
+                Height="77*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition
+                Width="30*" />
+            <ColumnDefinition
+                Width="10*" />
+        </Grid.ColumnDefinitions>
+
+        <Views:CategoryView
+            Grid.RowSpan="2" />
+        <Views:ProfileView
+            Grid.Column="1" />
+        <Views:FeedView
+            Grid.Column="1"
+            Grid.Row="1" />
+        <Views:TickerView
+            Grid.Row="2"
+            Grid.ColumnSpan="2" />
+
     </Grid>
 </Window>
